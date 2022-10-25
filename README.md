@@ -26,7 +26,6 @@
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -36,7 +35,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Rob Conery's book "A Curious Moon" is something I've been meaning to go through for a long while.  He's a big fan of PostgreSQL and wrote this book as a story-driven introduction to this database technology.  I haven't used PostgreSQL professionally at all... I've heard good things about it, but I don't think I'm going to be blown away by it.  That being said, I want to read through the book and do the exercises.
+Rob Conery's book "A Curious Moon" is something I've been meaning to go through for a long while.  He's a big fan of PostgreSQL (postgres) and wrote this book as a story-driven introduction to this database technology.  I haven't used PostgreSQL professionally at all... I've heard good things about it, but I don't think I'm going to be blown away by it.  That being said, I want to read through the book and do the exercises.
 
 Here's why:
 * Reading is fun.  Science is fun.  Programming is fun.  :smile:
@@ -51,13 +50,23 @@ Here's why:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-I primarily use my Windows 10 PC to do personal development.  The book emphasizes the use of Mac and bash scripts.  I don't plan on buying a Mac, but I can execute a bash-shell using Gitbash, so this will be my attempt at making all of that work!
+I primarily use my Windows 10 PC to do personal development.  The book emphasizes the use of Mac and bash scripts and scoffs at those who use Windows :smile:.  I don't plan on buying a Mac.  
+
+* Ensure you have Windows Terminal installed
+* Ensure you have git-scm installed w/ Git-Bash [Instructions](https://linuxhint.com/add-git-bash-windows-terminal/)
+* Install postgres
 
 
 ### Notes
 
 I'll fill this out as I stumble through making things work on Windows 10 :smile:
 
+* The story instructs us to get familiar w/ the **psql** executable, which is installed with Postgres.  If you followed the default installation, it will be in C:\Program Files\PostgreSQL\15\bin.  Add this to your PATH environment variable
+* The screenshots show execution of commands like **createdb** and **dropdb**.  These didn't work for me... perhaps they're aliased a different way. I had to use **CREATE DATABASE** and **DROP DATABASE**
+* To connect to my enceladus database, the command was as follows, where 'postgres' is my username.
+```
+psql -U postgres -d enceladus
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,23 +89,12 @@ I'll fill this out as I stumble through making things work on Windows 10 :smile:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- CONTACT -->
-## Contact
-
-C Abraham
-
-Project Link: [https://github.com/cabraham/CuriousMoonExercise](https://github.com/cabraham/CuriousMoonExercise)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [A Curious Moon](https://bigmachine.io/products/a-curious-moon/)
 * [PostgreSQL](https://www.postgresql.org/)
+* [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701)
 * [Makefile Tutorial](https://makefiletutorial.com/)
 * [Git SCM](https://git-scm.com/downloads)
 * [Markdown Guide](https://www.markdownguide.org/)

@@ -1,7 +1,4 @@
 <a name="readme-top"></a>
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/ciby-abraham-5a30091/]
 
 <br />
 <div align="center">

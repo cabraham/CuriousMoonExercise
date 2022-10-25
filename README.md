@@ -67,7 +67,9 @@ I'll fill this out as I stumble through making things work on Windows 10 :smile:
 ```
 psql -U postgres -d enceladus
 ```
-
+* To enable passwordless authentication, modify **pg_hba.conf**.  Change all instances of **scram-sha-256** to **trust**.  
+  * THIS IS FOR LOCAL ONLY.  DON'T EVER DO THIS IN PRODUCTION!!!
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

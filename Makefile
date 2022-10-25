@@ -7,7 +7,7 @@ NORMALIZE=$(SCRIPTS)/normalize.sql
 USER=postgres
 
 
-all: normalize
+all: clean normalize
 	psql -U $(USER) -d $(DB) -f $(BUILD)
 
 master: 

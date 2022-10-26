@@ -55,7 +55,9 @@ I primarily use my Windows 10 PC to do personal development.  The book emphasize
 * Ensure you have Windows Terminal installed
 * Ensure you have git-scm installed w/ Git-Bash [Instructions](https://linuxhint.com/add-git-bash-windows-terminal/)
 * Install postgres
-
+* Install csvkit [Instructions](https://csvkit.readthedocs.io/en/latest/tutorial/1_getting_started.html#installing-csvkit)
+  * Python 3 is a pre-requisite
+  * Git-bash did not understand sudo.  Just use pip install csvkit
 
 ### Notes
 
@@ -100,6 +102,7 @@ psql -U postgres -d enceladus
 * [Makefile Tutorial](https://makefiletutorial.com/)
 * [Git SCM](https://git-scm.com/downloads)
 * [Markdown Guide](https://www.markdownguide.org/)
-
+* [csvkit](https://csvkit.readthedocs.io/en/latest/index.html)
+* 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

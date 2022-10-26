@@ -72,3 +72,24 @@ left join targets on targets.description = import.master_plan.target
 left join teams on teams.description = import.master_plan.team
 left join requests on requests.description = import.master_plan.request_name
 left join spass_types on spass_types.description = import.master_plan.spass_type;
+
+
+drop materialized view if exists enceladus_events;
+create materialized view enceladus_events as
+select
+events.id,
+events.title,
+events.description,
+events.time_stamp,
+events.time_stamp::date as date,
+to_tsvector(
+	concat(events.description,' ',events.title)
+) as search
+from events
+inner join event_types
+on event_types.id = events.event_type_id
+where target_id = 28
+order by time_stamp;
+
+create index idx_event_search
+on enceladus_events using GIN(search);
